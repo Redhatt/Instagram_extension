@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name":"My extensions",
+  "version":"0.1",
+  "description":"Twitter Posts ",
+  "permissions":["storage", "contextMenus"],
+  "background": {
+    "scripts":["js/background.js"]
+  },
+  "content_scripts": [{
+    "js": ["js/content.js"],
+    "matches": ["https://*/*"]
+  }],
+  "icons":{
+         "16": "icon.jpg",
+         "48": "icon.jpg",
+        "128": "icon.jpg"
+      }
+  }
